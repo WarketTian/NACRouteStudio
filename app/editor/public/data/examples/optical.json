@@ -1,0 +1,1065 @@
+{
+  "schema": 1,
+  "id": "example-optical",
+  "name": "光学电路专用 NAC",
+  "modules": [
+    {
+      "type": "optical",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {
+        "waterTiers": [
+          6,
+          8
+        ]
+      },
+      "rules": []
+    },
+    {
+      "type": "parts",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "wire",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "cutting",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": 4,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    null,
+    {
+      "type": "board",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": "fluid:PrismaticAcid",
+      "config": {
+        "impurity": 15
+      },
+      "rules": []
+    },
+    {
+      "type": "encasing",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    null,
+    null,
+    null,
+    {
+      "type": "assembly",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": 9,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "splitter",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": [
+        {
+          "mode": "items",
+          "inputs": [
+            14
+          ],
+          "items": [
+            {
+              "item": "OpticalProcessor",
+              "renamed": false
+            }
+          ],
+          "outputs": [
+            14
+          ],
+          "redstone": {
+            "channel": 0,
+            "level": 0
+          }
+        },
+        {
+          "mode": "items",
+          "inputs": [
+            14
+          ],
+          "items": [
+            {
+              "item": "ProcessedCircuitOpticalProcessor",
+              "renamed": false
+            }
+          ],
+          "outputs": [
+            11
+          ],
+          "redstone": {
+            "channel": 0,
+            "level": 0
+          }
+        },
+        {
+          "mode": "items",
+          "inputs": [
+            15
+          ],
+          "items": [
+            {
+              "item": "OpticalAssembly",
+              "renamed": false
+            }
+          ],
+          "outputs": [
+            14
+          ],
+          "redstone": {
+            "channel": 0,
+            "level": 0
+          }
+        },
+        {
+          "mode": "items",
+          "inputs": [
+            15
+          ],
+          "items": [
+            {
+              "item": "ProcessedCircuitOpticalAssembly",
+              "renamed": false
+            }
+          ],
+          "outputs": [
+            11
+          ],
+          "redstone": {
+            "channel": 0,
+            "level": 0
+          }
+        }
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "id": "p-1",
+      "slot": 10,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "OpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedCircuitOpticalProcessor",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-2",
+      "slot": 11,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "OpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedCircuitOpticalProcessor",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-3",
+      "slot": 0,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "ProcessedChipOpticalCPU",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-4",
+      "slot": 10,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "ProcessedChipOpticalCPU",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-5",
+      "slot": -1,
+      "kind": "feed",
+      "color": 14,
+      "items": [
+        {
+          "item": "item:ChipOpticalCPU",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-6",
+      "slot": 0,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "ChipOpticalCPU",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-7",
+      "slot": 0,
+      "kind": "out",
+      "color": 7,
+      "items": [
+        {
+          "item": "ProcessedOpticalRAM",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-8",
+      "slot": 10,
+      "kind": "in",
+      "color": 7,
+      "items": [
+        {
+          "item": "ProcessedOpticalRAM",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-9",
+      "slot": -1,
+      "kind": "feed",
+      "color": 7,
+      "items": [
+        {
+          "item": "item:OpticalRAM",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-10",
+      "slot": 0,
+      "kind": "in",
+      "color": 7,
+      "items": [
+        {
+          "item": "OpticalRAM",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-11",
+      "slot": 1,
+      "kind": "out",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-12",
+      "slot": 10,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-13",
+      "slot": -1,
+      "kind": "feed",
+      "color": 11,
+      "items": [
+        {
+          "item": "item:OpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDDiode",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDResistor",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-14",
+      "slot": 1,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "OpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDDiode",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDResistor",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-15",
+      "slot": 2,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedCableOpticalFiber",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireLumiium",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-16",
+      "slot": 10,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedCableOpticalFiber",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireLumiium",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 2,
+      "facing": "e"
+    },
+    {
+      "id": "p-17",
+      "slot": -1,
+      "kind": "feed",
+      "color": 12,
+      "items": [
+        {
+          "item": "item:CableOpticalFiber",
+          "renamed": false
+        },
+        {
+          "item": "item:WireLumiium",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-18",
+      "slot": 2,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "CableOpticalFiber",
+          "renamed": false
+        },
+        {
+          "item": "WireLumiium",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-19",
+      "slot": 3,
+      "kind": "out",
+      "color": 13,
+      "items": [
+        {
+          "item": "ProcessedBoltEnrichedHolmium",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedChipNOR",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedChipRAM",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-20",
+      "slot": 10,
+      "kind": "in",
+      "color": 13,
+      "items": [
+        {
+          "item": "ProcessedBoltEnrichedHolmium",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedChipNOR",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedChipRAM",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-21",
+      "slot": -1,
+      "kind": "feed",
+      "color": 13,
+      "items": [
+        {
+          "item": "item:BoltEnrichedHolmium",
+          "renamed": false
+        },
+        {
+          "item": "item:ChipNOR",
+          "renamed": false
+        },
+        {
+          "item": "item:ChipRAM",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-22",
+      "slot": 3,
+      "kind": "in",
+      "color": 13,
+      "items": [
+        {
+          "item": "BoltEnrichedHolmium",
+          "renamed": false
+        },
+        {
+          "item": "ChipNOR",
+          "renamed": false
+        },
+        {
+          "item": "ChipRAM",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 4,
+      "facing": "w"
+    },
+    {
+      "id": "p-23",
+      "slot": 0,
+      "kind": "out",
+      "color": 11,
+      "items": [
+        {
+          "item": "OpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-24",
+      "slot": -1,
+      "kind": "final",
+      "color": 11,
+      "items": [
+        {
+          "item": "item:OpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-25",
+      "slot": 11,
+      "kind": "out",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedCircuitOpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedCircuitOpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-26",
+      "slot": 0,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedCircuitOpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedCircuitOpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-27",
+      "slot": 11,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "OpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-28",
+      "slot": -1,
+      "kind": "final",
+      "color": 14,
+      "items": [
+        {
+          "item": "item:OpticalProcessor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-29",
+      "slot": 10,
+      "kind": "out",
+      "color": 15,
+      "items": [
+        {
+          "item": "OpticalAssembly",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedCircuitOpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-30",
+      "slot": 11,
+      "kind": "in",
+      "color": 15,
+      "items": [
+        {
+          "item": "OpticalAssembly",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedCircuitOpticalAssembly",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-31",
+      "slot": 5,
+      "kind": "out",
+      "color": 15,
+      "items": [
+        {
+          "item": "ProcessedBoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-32",
+      "slot": 10,
+      "kind": "in",
+      "color": 15,
+      "items": [
+        {
+          "item": "ProcessedBoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 4,
+      "facing": "e"
+    },
+    {
+      "id": "p-33",
+      "slot": -1,
+      "kind": "feed",
+      "color": 15,
+      "items": [
+        {
+          "item": "item:BoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-34",
+      "slot": 5,
+      "kind": "in",
+      "color": 15,
+      "items": [
+        {
+          "item": "BoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-35",
+      "slot": -1,
+      "kind": "feed",
+      "color": 6,
+      "items": [
+        {
+          "item": "item:OpticalProcessor",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 2,
+      "facing": "w"
+    },
+    {
+      "id": "p-36",
+      "slot": 10,
+      "kind": "in",
+      "color": 6,
+      "items": [
+        {
+          "item": "OpticalProcessor",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 3,
+      "facing": "e"
+    },
+    {
+      "id": "p-37",
+      "slot": 6,
+      "kind": "out",
+      "color": 10,
+      "items": [
+        {
+          "item": "ProcessedFoilSiliconeRubber",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-38",
+      "slot": 10,
+      "kind": "in",
+      "color": 10,
+      "items": [
+        {
+          "item": "ProcessedFoilSiliconeRubber",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-39",
+      "slot": -1,
+      "kind": "feed",
+      "color": 10,
+      "items": [
+        {
+          "item": "item:FoilSiliconeRubber",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-40",
+      "slot": 6,
+      "kind": "in",
+      "color": 10,
+      "items": [
+        {
+          "item": "FoilSiliconeRubber",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    }
+  ],
+  "routes": [
+    {
+      "id": "r-1",
+      "from": "p-1",
+      "to": "p-2",
+      "layer": 0
+    },
+    {
+      "id": "r-2",
+      "from": "p-3",
+      "to": "p-4",
+      "layer": 1
+    },
+    {
+      "id": "r-3",
+      "from": "p-5",
+      "to": "p-6",
+      "layer": 2
+    },
+    {
+      "id": "r-4",
+      "from": "p-7",
+      "to": "p-8",
+      "layer": 3
+    },
+    {
+      "id": "r-5",
+      "from": "p-9",
+      "to": "p-10",
+      "layer": 0
+    },
+    {
+      "id": "r-6",
+      "from": "p-11",
+      "to": "p-12",
+      "layer": 1
+    },
+    {
+      "id": "r-7",
+      "from": "p-13",
+      "to": "p-14",
+      "layer": 2
+    },
+    {
+      "id": "r-8",
+      "from": "p-15",
+      "to": "p-16",
+      "layer": 3
+    },
+    {
+      "id": "r-9",
+      "from": "p-17",
+      "to": "p-18",
+      "layer": 0
+    },
+    {
+      "id": "r-10",
+      "from": "p-19",
+      "to": "p-20",
+      "layer": 1
+    },
+    {
+      "id": "r-11",
+      "from": "p-21",
+      "to": "p-22",
+      "layer": 2
+    },
+    {
+      "id": "r-12",
+      "from": "p-23",
+      "to": "p-24",
+      "layer": 3
+    },
+    {
+      "id": "r-13",
+      "from": "p-25",
+      "to": "p-26",
+      "layer": 0
+    },
+    {
+      "id": "r-14",
+      "from": "p-27",
+      "to": "p-28",
+      "layer": 1
+    },
+    {
+      "id": "r-15",
+      "from": "p-29",
+      "to": "p-30",
+      "layer": 2
+    },
+    {
+      "id": "r-16",
+      "from": "p-31",
+      "to": "p-32",
+      "layer": 3
+    },
+    {
+      "id": "r-17",
+      "from": "p-33",
+      "to": "p-34",
+      "layer": 0
+    },
+    {
+      "id": "r-18",
+      "from": "p-35",
+      "to": "p-36",
+      "layer": 1
+    },
+    {
+      "id": "r-19",
+      "from": "p-37",
+      "to": "p-38",
+      "layer": 2
+    },
+    {
+      "id": "r-20",
+      "from": "p-39",
+      "to": "p-40",
+      "layer": 3
+    }
+  ],
+  "circuits": [
+    {
+      "item": "item:OpticalProcessor",
+      "quantity": 8
+    },
+    {
+      "item": "item:OpticalAssembly",
+      "quantity": 8
+    }
+  ],
+  "power": {
+    "mode": "amps",
+    "eu": null,
+    "amps": 32,
+    "tier": "UMV",
+    "ratio": 60,
+    "calibration": {
+      "family": "optical",
+      "level": 3
+    }
+  },
+  "notes": "分流器将成品送回控制室、未整理产物送往组织器返工。光学处理器也可作为光学集群的外部进料。\n中文维基参考：https://gtnh.huijiwiki.com/wiki/指南:纳米芯片组装复合体自动化/光学"
+}

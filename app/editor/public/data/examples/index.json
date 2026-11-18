@@ -1,0 +1,14 @@
+[
+  {
+    "id": "primitive",
+    "name": "原始电路专用 NAC"
+  },
+  {
+    "id": "optical",
+    "name": "光学电路专用 NAC"
+  },
+  {
+    "id": "special",
+    "name": "特殊电路专用 NAC"
+  }
+]

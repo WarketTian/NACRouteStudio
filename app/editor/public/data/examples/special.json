@@ -1,0 +1,1403 @@
+{
+  "schema": 1,
+  "id": "example-special",
+  "name": "特殊电路专用 NAC",
+  "modules": [
+    {
+      "type": "etching",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {
+        "laserTier": "UXV",
+        "laserAmps": 1024
+      },
+      "rules": []
+    },
+    {
+      "type": "parts",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "assembly",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": 10,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    null,
+    {
+      "type": "cutting",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": 6,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "encasing",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "encasing",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "parts",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "board",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": "fluid:UUMatter",
+      "config": {
+        "impurity": 15
+      },
+      "rules": []
+    },
+    {
+      "type": "wire",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "board",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": "fluid:PrismaticAcid",
+      "config": {
+        "impurity": 15
+      },
+      "rules": []
+    },
+    {
+      "type": "splitter",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": [
+        {
+          "mode": "items",
+          "inputs": [
+            6
+          ],
+          "items": [
+            {
+              "item": "item:OpticalSMDInductor",
+              "renamed": true
+            }
+          ],
+          "outputs": [
+            12,
+            11
+          ],
+          "redstone": {
+            "channel": 0,
+            "level": 0
+          }
+        }
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "id": "p-1",
+      "slot": 2,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "PicoCircuit",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-2",
+      "slot": -1,
+      "kind": "final",
+      "color": 12,
+      "items": [
+        {
+          "item": "item:PicoCircuit",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-3",
+      "slot": 5,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedPicoCircuitCasing",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-4",
+      "slot": 2,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedPicoCircuitCasing",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-5",
+      "slot": 6,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedFoilRadoxPolymer",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-6",
+      "slot": 5,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedFoilRadoxPolymer",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-7",
+      "slot": -1,
+      "kind": "feed",
+      "color": 12,
+      "items": [
+        {
+          "item": "item:FoilRadoxPolymer",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-8",
+      "slot": 6,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "FoilRadoxPolymer",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-9",
+      "slot": 4,
+      "kind": "out",
+      "color": 13,
+      "items": [
+        {
+          "item": "ProcessedFrameboxCelestialTungsten",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedChipAttoPIC",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-10",
+      "slot": 5,
+      "kind": "in",
+      "color": 13,
+      "items": [
+        {
+          "item": "ProcessedFrameboxCelestialTungsten",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedChipAttoPIC",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-11",
+      "slot": -1,
+      "kind": "feed",
+      "color": 13,
+      "items": [
+        {
+          "item": "item:FrameboxCelestialTungsten",
+          "renamed": false
+        },
+        {
+          "item": "item:ChipAttoPIC",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-12",
+      "slot": 4,
+      "kind": "in",
+      "color": 13,
+      "items": [
+        {
+          "item": "FrameboxCelestialTungsten",
+          "renamed": false
+        },
+        {
+          "item": "ChipAttoPIC",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-13",
+      "slot": -1,
+      "kind": "feed",
+      "color": 15,
+      "items": [
+        {
+          "item": "item:ScrewAstralTitanium",
+          "renamed": false
+        },
+        {
+          "item": "item:CasingUEVSuperconductor",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-14",
+      "slot": 5,
+      "kind": "in",
+      "color": 15,
+      "items": [
+        {
+          "item": "ScrewAstralTitanium",
+          "renamed": false
+        },
+        {
+          "item": "CasingUEVSuperconductor",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-15",
+      "slot": 8,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "CleansedBoardPico",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-16",
+      "slot": 2,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "CleansedBoardPico",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-17",
+      "slot": 1,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "BoardPico",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-18",
+      "slot": 8,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "BoardPico",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-19",
+      "slot": 7,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-20",
+      "slot": 1,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-21",
+      "slot": -1,
+      "kind": "feed",
+      "color": 6,
+      "items": [
+        {
+          "item": "item:OpticalSMDInductor",
+          "renamed": true
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-22",
+      "slot": 11,
+      "kind": "in",
+      "color": 6,
+      "items": [
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": true
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-23",
+      "slot": 11,
+      "kind": "out",
+      "color": 12,
+      "items": [
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": true
+        }
+      ],
+      "x": 4,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-24",
+      "slot": 7,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": true
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-25",
+      "slot": 7,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-26",
+      "slot": 1,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-27",
+      "slot": -1,
+      "kind": "feed",
+      "color": 14,
+      "items": [
+        {
+          "item": "item:OpticalSMDCapacitor",
+          "renamed": true
+        },
+        {
+          "item": "item:OpticalSMDResistor",
+          "renamed": true
+        },
+        {
+          "item": "item:OpticalSMDTransistor",
+          "renamed": true
+        },
+        {
+          "item": "item:OpticalSMDDiode",
+          "renamed": true
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-28",
+      "slot": 7,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "OpticalSMDCapacitor",
+          "renamed": true
+        },
+        {
+          "item": "OpticalSMDResistor",
+          "renamed": true
+        },
+        {
+          "item": "OpticalSMDTransistor",
+          "renamed": true
+        },
+        {
+          "item": "OpticalSMDDiode",
+          "renamed": true
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-29",
+      "slot": 10,
+      "kind": "out",
+      "color": 10,
+      "items": [
+        {
+          "item": "ProcessedBoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-30",
+      "slot": 1,
+      "kind": "in",
+      "color": 10,
+      "items": [
+        {
+          "item": "ProcessedBoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-31",
+      "slot": -1,
+      "kind": "feed",
+      "color": 10,
+      "items": [
+        {
+          "item": "item:BoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-32",
+      "slot": 10,
+      "kind": "in",
+      "color": 10,
+      "items": [
+        {
+          "item": "BoardOptical",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-33",
+      "slot": 5,
+      "kind": "out",
+      "color": 4,
+      "items": [
+        {
+          "item": "PicoCPU",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-34",
+      "slot": 2,
+      "kind": "in",
+      "color": 4,
+      "items": [
+        {
+          "item": "PicoCPU",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-35",
+      "slot": 0,
+      "kind": "out",
+      "color": 4,
+      "items": [
+        {
+          "item": "OpticalMainframeRack",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-36",
+      "slot": 5,
+      "kind": "in",
+      "color": 4,
+      "items": [
+        {
+          "item": "OpticalMainframeRack",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-37",
+      "slot": -1,
+      "kind": "feed",
+      "color": 4,
+      "items": [
+        {
+          "item": "item:OpticalMainframe",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-38",
+      "slot": 0,
+      "kind": "in",
+      "color": 4,
+      "items": [
+        {
+          "item": "OpticalMainframe",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-39",
+      "slot": -1,
+      "kind": "feed",
+      "color": 2,
+      "items": [
+        {
+          "item": "item:ScrewEnrichedNaquadahAlloy",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-40",
+      "slot": 0,
+      "kind": "in",
+      "color": 2,
+      "items": [
+        {
+          "item": "ScrewEnrichedNaquadahAlloy",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-41",
+      "slot": 7,
+      "kind": "out",
+      "color": 7,
+      "items": [
+        {
+          "item": "ProcessedPlateRhugnor",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-42",
+      "slot": 5,
+      "kind": "in",
+      "color": 7,
+      "items": [
+        {
+          "item": "ProcessedPlateRhugnor",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 4,
+      "facing": "w"
+    },
+    {
+      "id": "p-43",
+      "slot": -1,
+      "kind": "feed",
+      "color": 7,
+      "items": [
+        {
+          "item": "item:PlateRhugnor",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-44",
+      "slot": 7,
+      "kind": "in",
+      "color": 7,
+      "items": [
+        {
+          "item": "PlateRhugnor",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-45",
+      "slot": -1,
+      "kind": "feed",
+      "color": 3,
+      "items": [
+        {
+          "item": "item:BoltRhugnor",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-46",
+      "slot": 7,
+      "kind": "in",
+      "color": 3,
+      "items": [
+        {
+          "item": "BoltRhugnor",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 2,
+      "facing": "e"
+    },
+    {
+      "id": "p-47",
+      "slot": 7,
+      "kind": "out",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 2,
+      "facing": "w"
+    },
+    {
+      "id": "p-48",
+      "slot": 2,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-49",
+      "slot": 11,
+      "kind": "out",
+      "color": 11,
+      "items": [
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": true
+        }
+      ],
+      "x": 3,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-50",
+      "slot": 7,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": true
+        }
+      ],
+      "x": 0,
+      "y": 3,
+      "facing": "w"
+    },
+    {
+      "id": "p-51",
+      "slot": -1,
+      "kind": "feed",
+      "color": 11,
+      "items": [
+        {
+          "item": "item:OpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-52",
+      "slot": 7,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "OpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 3,
+      "facing": "e"
+    },
+    {
+      "id": "p-53",
+      "slot": 9,
+      "kind": "out",
+      "color": 1,
+      "items": [
+        {
+          "item": "ProcessedWireProtoHalkonite",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireInfinity",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-54",
+      "slot": 2,
+      "kind": "in",
+      "color": 1,
+      "items": [
+        {
+          "item": "ProcessedWireProtoHalkonite",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireInfinity",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-55",
+      "slot": -1,
+      "kind": "feed",
+      "color": 1,
+      "items": [
+        {
+          "item": "item:WireProtoHalkonite",
+          "renamed": false
+        },
+        {
+          "item": "item:WireInfinity",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 4,
+      "facing": "w"
+    },
+    {
+      "id": "p-56",
+      "slot": 9,
+      "kind": "in",
+      "color": 1,
+      "items": [
+        {
+          "item": "WireProtoHalkonite",
+          "renamed": false
+        },
+        {
+          "item": "WireInfinity",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 2,
+      "facing": "e"
+    },
+    {
+      "id": "p-57",
+      "slot": 4,
+      "kind": "out",
+      "color": 9,
+      "items": [
+        {
+          "item": "ProcessedBoltTranscendentMetal",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-58",
+      "slot": 2,
+      "kind": "in",
+      "color": 9,
+      "items": [
+        {
+          "item": "ProcessedBoltTranscendentMetal",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-59",
+      "slot": -1,
+      "kind": "feed",
+      "color": 9,
+      "items": [
+        {
+          "item": "item:BoltTranscendentMetal",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 4,
+      "facing": "e"
+    },
+    {
+      "id": "p-60",
+      "slot": 4,
+      "kind": "in",
+      "color": 9,
+      "items": [
+        {
+          "item": "BoltTranscendentMetal",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 2,
+      "facing": "w"
+    }
+  ],
+  "routes": [
+    {
+      "id": "r-1",
+      "from": "p-1",
+      "to": "p-2",
+      "layer": 0
+    },
+    {
+      "id": "r-2",
+      "from": "p-3",
+      "to": "p-4",
+      "layer": 1
+    },
+    {
+      "id": "r-3",
+      "from": "p-5",
+      "to": "p-6",
+      "layer": 2
+    },
+    {
+      "id": "r-4",
+      "from": "p-7",
+      "to": "p-8",
+      "layer": 3
+    },
+    {
+      "id": "r-5",
+      "from": "p-9",
+      "to": "p-10",
+      "layer": 0
+    },
+    {
+      "id": "r-6",
+      "from": "p-11",
+      "to": "p-12",
+      "layer": 1
+    },
+    {
+      "id": "r-7",
+      "from": "p-13",
+      "to": "p-14",
+      "layer": 2
+    },
+    {
+      "id": "r-8",
+      "from": "p-15",
+      "to": "p-16",
+      "layer": 3
+    },
+    {
+      "id": "r-9",
+      "from": "p-17",
+      "to": "p-18",
+      "layer": 0
+    },
+    {
+      "id": "r-10",
+      "from": "p-19",
+      "to": "p-20",
+      "layer": 1
+    },
+    {
+      "id": "r-11",
+      "from": "p-21",
+      "to": "p-22",
+      "layer": 2
+    },
+    {
+      "id": "r-12",
+      "from": "p-23",
+      "to": "p-24",
+      "layer": 3
+    },
+    {
+      "id": "r-13",
+      "from": "p-25",
+      "to": "p-26",
+      "layer": 0
+    },
+    {
+      "id": "r-14",
+      "from": "p-27",
+      "to": "p-28",
+      "layer": 1
+    },
+    {
+      "id": "r-15",
+      "from": "p-29",
+      "to": "p-30",
+      "layer": 2
+    },
+    {
+      "id": "r-16",
+      "from": "p-31",
+      "to": "p-32",
+      "layer": 3
+    },
+    {
+      "id": "r-17",
+      "from": "p-33",
+      "to": "p-34",
+      "layer": 0
+    },
+    {
+      "id": "r-18",
+      "from": "p-35",
+      "to": "p-36",
+      "layer": 1
+    },
+    {
+      "id": "r-19",
+      "from": "p-37",
+      "to": "p-38",
+      "layer": 2
+    },
+    {
+      "id": "r-20",
+      "from": "p-39",
+      "to": "p-40",
+      "layer": 3
+    },
+    {
+      "id": "r-21",
+      "from": "p-41",
+      "to": "p-42",
+      "layer": 0
+    },
+    {
+      "id": "r-22",
+      "from": "p-43",
+      "to": "p-44",
+      "layer": 1
+    },
+    {
+      "id": "r-23",
+      "from": "p-45",
+      "to": "p-46",
+      "layer": 2
+    },
+    {
+      "id": "r-24",
+      "from": "p-47",
+      "to": "p-48",
+      "layer": 3
+    },
+    {
+      "id": "r-25",
+      "from": "p-49",
+      "to": "p-50",
+      "layer": 0
+    },
+    {
+      "id": "r-26",
+      "from": "p-51",
+      "to": "p-52",
+      "layer": 1
+    },
+    {
+      "id": "r-27",
+      "from": "p-53",
+      "to": "p-54",
+      "layer": 2
+    },
+    {
+      "id": "r-28",
+      "from": "p-55",
+      "to": "p-56",
+      "layer": 3
+    },
+    {
+      "id": "r-29",
+      "from": "p-57",
+      "to": "p-58",
+      "layer": 0
+    },
+    {
+      "id": "r-30",
+      "from": "p-59",
+      "to": "p-60",
+      "layer": 1
+    }
+  ],
+  "circuits": [
+    {
+      "item": "item:PicoCircuit",
+      "quantity": 2
+    }
+  ],
+  "power": {
+    "mode": "amps",
+    "eu": null,
+    "amps": 128,
+    "tier": "MAX",
+    "ratio": 80,
+    "calibration": {
+      "family": "special",
+      "level": 3
+    }
+  },
+  "notes": "外部输入光学主机电路；两台全板浸没设备分别供应海晶酸与 UU 物质。部分贴片元件以重命名标识送往分流器。\n中文维基参考：https://gtnh.huijiwiki.com/wiki/指南:纳米芯片组装复合体自动化/特殊"
+}

@@ -1,0 +1,841 @@
+{
+  "schema": 1,
+  "id": "example-primitive",
+  "name": "原始电路专用 NAC",
+  "modules": [
+    {
+      "type": "bio",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "assembly",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": 8,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "cutting",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": 2,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "assembly",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": 8,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "wire",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "type": "parts",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": null,
+      "config": {},
+      "rules": []
+    },
+    {
+      "type": "board",
+      "rotation": 0,
+      "ignoreMaterials": false,
+      "isolate": false,
+      "waterTier": null,
+      "casingTier": null,
+      "fluid": "fluid:IronIIIChloride",
+      "config": {
+        "impurity": 15
+      },
+      "rules": []
+    }
+  ],
+  "ports": [
+    {
+      "id": "p-1",
+      "slot": 3,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "NandChip",
+          "renamed": false
+        },
+        {
+          "item": "Microprocessor",
+          "renamed": false
+        },
+        {
+          "item": "IntegratedProcessor",
+          "renamed": false
+        },
+        {
+          "item": "NanoProcessor",
+          "renamed": false
+        },
+        {
+          "item": "QuantumProcessor",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-2",
+      "slot": -1,
+      "kind": "final",
+      "color": 14,
+      "items": [
+        {
+          "item": "item:NandChip",
+          "renamed": false
+        },
+        {
+          "item": "item:Microprocessor",
+          "renamed": false
+        },
+        {
+          "item": "item:IntegratedProcessor",
+          "renamed": false
+        },
+        {
+          "item": "item:NanoProcessor",
+          "renamed": false
+        },
+        {
+          "item": "item:QuantumProcessor",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-3",
+      "slot": 1,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "PrimedUnattunedCircuitry",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-4",
+      "slot": 3,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "PrimedUnattunedCircuitry",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-5",
+      "slot": 0,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "UnattunedCircuitry",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-6",
+      "slot": 1,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "UnattunedCircuitry",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-7",
+      "slot": 11,
+      "kind": "out",
+      "color": 14,
+      "items": [
+        {
+          "item": "ProcessedBoardMultifiberglassElite",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-8",
+      "slot": 0,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "ProcessedBoardMultifiberglassElite",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 5,
+      "facing": "w"
+    },
+    {
+      "id": "p-9",
+      "slot": -1,
+      "kind": "feed",
+      "color": 14,
+      "items": [
+        {
+          "item": "item:BoardMultifiberglassElite",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-10",
+      "slot": 11,
+      "kind": "in",
+      "color": 14,
+      "items": [
+        {
+          "item": "BoardMultifiberglassElite",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-11",
+      "slot": 10,
+      "kind": "out",
+      "color": 7,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 1,
+      "facing": "e"
+    },
+    {
+      "id": "p-12",
+      "slot": 1,
+      "kind": "in",
+      "color": 7,
+      "items": [
+        {
+          "item": "ProcessedOpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedOpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 4,
+      "facing": "w"
+    },
+    {
+      "id": "p-13",
+      "slot": -1,
+      "kind": "feed",
+      "color": 7,
+      "items": [
+        {
+          "item": "item:OpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "item:OpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-14",
+      "slot": 10,
+      "kind": "in",
+      "color": 7,
+      "items": [
+        {
+          "item": "OpticalSMDInductor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDCapacitor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDResistor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDTransistor",
+          "renamed": false
+        },
+        {
+          "item": "OpticalSMDDiode",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-15",
+      "slot": 2,
+      "kind": "out",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedBoltCosmicNeutronium",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    },
+    {
+      "id": "p-16",
+      "slot": 1,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "ProcessedBoltCosmicNeutronium",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-17",
+      "slot": -1,
+      "kind": "feed",
+      "color": 11,
+      "items": [
+        {
+          "item": "item:BoltCosmicNeutronium",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-18",
+      "slot": 2,
+      "kind": "in",
+      "color": 11,
+      "items": [
+        {
+          "item": "BoltCosmicNeutronium",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-19",
+      "slot": -1,
+      "kind": "feed",
+      "color": 12,
+      "items": [
+        {
+          "item": "item:CasingKevlar",
+          "renamed": false
+        }
+      ],
+      "x": 4,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-20",
+      "slot": 1,
+      "kind": "in",
+      "color": 12,
+      "items": [
+        {
+          "item": "CasingKevlar",
+          "renamed": false
+        }
+      ],
+      "x": 1,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-21",
+      "slot": 2,
+      "kind": "out",
+      "color": 13,
+      "items": [
+        {
+          "item": "ProcessedChipASOC",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltCopper",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltPlatinum",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltNiobiumTitanium",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-22",
+      "slot": 3,
+      "kind": "in",
+      "color": 13,
+      "items": [
+        {
+          "item": "ProcessedChipASOC",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltCopper",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltPlatinum",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedBoltNiobiumTitanium",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-23",
+      "slot": -1,
+      "kind": "feed",
+      "color": 13,
+      "items": [
+        {
+          "item": "item:ChipASOC",
+          "renamed": false
+        },
+        {
+          "item": "item:BoltRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "item:BoltCopper",
+          "renamed": false
+        },
+        {
+          "item": "item:BoltPlatinum",
+          "renamed": false
+        },
+        {
+          "item": "item:BoltNiobiumTitanium",
+          "renamed": false
+        }
+      ],
+      "x": 3,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-24",
+      "slot": 2,
+      "kind": "in",
+      "color": 13,
+      "items": [
+        {
+          "item": "ChipASOC",
+          "renamed": false
+        },
+        {
+          "item": "BoltRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "BoltCopper",
+          "renamed": false
+        },
+        {
+          "item": "BoltPlatinum",
+          "renamed": false
+        },
+        {
+          "item": "BoltNiobiumTitanium",
+          "renamed": false
+        }
+      ],
+      "x": 2,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-25",
+      "slot": 4,
+      "kind": "out",
+      "color": 15,
+      "items": [
+        {
+          "item": "ProcessedWireCopper",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireElectrum",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWirePlatinum",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 0,
+      "facing": "n"
+    },
+    {
+      "id": "p-26",
+      "slot": 3,
+      "kind": "in",
+      "color": 15,
+      "items": [
+        {
+          "item": "ProcessedWireCopper",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWireElectrum",
+          "renamed": false
+        },
+        {
+          "item": "ProcessedWirePlatinum",
+          "renamed": false
+        }
+      ],
+      "x": 5,
+      "y": 6,
+      "facing": "s"
+    },
+    {
+      "id": "p-27",
+      "slot": -1,
+      "kind": "feed",
+      "color": 15,
+      "items": [
+        {
+          "item": "item:WireCopper",
+          "renamed": false
+        },
+        {
+          "item": "item:WireRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "item:WireElectrum",
+          "renamed": false
+        },
+        {
+          "item": "item:WirePlatinum",
+          "renamed": false
+        }
+      ],
+      "x": 6,
+      "y": 5,
+      "facing": "e"
+    },
+    {
+      "id": "p-28",
+      "slot": 4,
+      "kind": "in",
+      "color": 15,
+      "items": [
+        {
+          "item": "WireCopper",
+          "renamed": false
+        },
+        {
+          "item": "WireRedAlloy",
+          "renamed": false
+        },
+        {
+          "item": "WireElectrum",
+          "renamed": false
+        },
+        {
+          "item": "WirePlatinum",
+          "renamed": false
+        }
+      ],
+      "x": 0,
+      "y": 1,
+      "facing": "w"
+    }
+  ],
+  "routes": [
+    {
+      "id": "r-1",
+      "from": "p-1",
+      "to": "p-2",
+      "layer": 0
+    },
+    {
+      "id": "r-2",
+      "from": "p-3",
+      "to": "p-4",
+      "layer": 1
+    },
+    {
+      "id": "r-3",
+      "from": "p-5",
+      "to": "p-6",
+      "layer": 2
+    },
+    {
+      "id": "r-4",
+      "from": "p-7",
+      "to": "p-8",
+      "layer": 3
+    },
+    {
+      "id": "r-5",
+      "from": "p-9",
+      "to": "p-10",
+      "layer": 0
+    },
+    {
+      "id": "r-6",
+      "from": "p-11",
+      "to": "p-12",
+      "layer": 1
+    },
+    {
+      "id": "r-7",
+      "from": "p-13",
+      "to": "p-14",
+      "layer": 2
+    },
+    {
+      "id": "r-8",
+      "from": "p-15",
+      "to": "p-16",
+      "layer": 3
+    },
+    {
+      "id": "r-9",
+      "from": "p-17",
+      "to": "p-18",
+      "layer": 0
+    },
+    {
+      "id": "r-10",
+      "from": "p-19",
+      "to": "p-20",
+      "layer": 1
+    },
+    {
+      "id": "r-11",
+      "from": "p-21",
+      "to": "p-22",
+      "layer": 2
+    },
+    {
+      "id": "r-12",
+      "from": "p-23",
+      "to": "p-24",
+      "layer": 3
+    },
+    {
+      "id": "r-13",
+      "from": "p-25",
+      "to": "p-26",
+      "layer": 0
+    },
+    {
+      "id": "r-14",
+      "from": "p-27",
+      "to": "p-28",
+      "layer": 1
+    }
+  ],
+  "circuits": [
+    {
+      "item": "item:NandChip",
+      "quantity": 64
+    },
+    {
+      "item": "item:Microprocessor",
+      "quantity": 64
+    },
+    {
+      "item": "item:IntegratedProcessor",
+      "quantity": 64
+    },
+    {
+      "item": "item:NanoProcessor",
+      "quantity": 64
+    },
+    {
+      "item": "item:QuantumProcessor",
+      "quantity": 64
+    }
+  ],
+  "power": {
+    "mode": "amps",
+    "eu": null,
+    "amps": 64,
+    "tier": "UEV",
+    "ratio": 90,
+    "calibration": {
+      "family": "primitive",
+      "level": 3
+    }
+  },
+  "notes": "两台组装矩阵分别负责预充能与成品，五种原始电路共用加工支路。可在右侧切换各电路的验证结果。\n中文维基参考：https://gtnh.huijiwiki.com/wiki/指南:纳米芯片组装复合体自动化/原始"
+}
