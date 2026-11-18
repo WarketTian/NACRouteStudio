@@ -10,6 +10,8 @@ An offline Windows planner for the **Nanochip Assembly Complex** in **GT New Hor
 
 *内置「特殊电路专用 NAC」示例（内置一些实例，不过是作者测试之举，愿各员工亲历而为！）。基面为实线，下沉层用不同疏密的虚线表示。*
 
+PS：本软件部分功能由AI实现，但功能都经过测试。
+
 ## 下载与启动
 
 1. 下载 **NACRouteStudio-1.0-win-x64.zip**，将整个压缩包解压到可写入的文件夹。
@@ -71,9 +73,19 @@ An offline Windows planner for the **Nanochip Assembly Complex** in **GT New Hor
 - 名称、结构与部分精校说明参考中文 Wiki 和 GTNH 社区汉化。IC2 冷却液、UU 物质等图标使用整合包对应版本的素材。 [GTNH 中文 Wiki · NAC](https://gtnh.huijiwiki.com/wiki/NAC) · [GTNH 汉化项目](https://github.com/GTNewHorizons/GTNH-Translations)
 - 拼音数据与桌面运行时的许可随包提供。 [pinyin-data 许可](app/editor/src/data/pinyin-data-LICENSE.txt) · [Electron 许可](app/runtime/LICENSE) · [Chromium 第三方许可](app/runtime/LICENSES.chromium.html)
 
+## 许可
+
+NAC Route Studio 的原创代码采用 [PolyForm Noncommercial License 1.0.0](LICENSE)。可按许可条款非商业使用、修改和再分发。商业用途须另行取得授权。
+
+随附的 GTNH 素材、第三方数据和桌面运行时组件适用各自的许可。相关来源和许可见上节。
+
+Required Notice: Copyright (c) 2026 WarketTian
+
 ## English
 
 **NAC Route Studio** is a Windows x64 portable planner for the **Nanochip Assembly Complex** in **GTNH 2.9.0**. Lay out modules and vacuum hatches, route materials on four layers, match recipes, and check power and material requirements before building in-game.
+
+The original NAC Route Studio code is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). The license permits noncommercial use, modification, and redistribution under its terms. Third-party assets, data, and runtime components retain their respective licenses.
 
 [Download the Windows x64 portable ZIP](https://github.com/WarketTian/NACRouteStudio/releases/download/v1.0/NACRouteStudio-1.0-win-x64.zip)
 
