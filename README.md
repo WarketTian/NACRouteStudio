@@ -8,7 +8,7 @@ An offline Windows planner for the **Nanochip Assembly Complex** in **GT New Hor
 
 ![特殊电路专用 NAC 示例。画布上有模块、彩色多层线路和目标电路，右栏列出了各条线路。](docs/screenshots/special-circuit-layout.png)
 
-*内置「特殊电路专用 NAC」示例。基面为实线，下沉层用不同疏密的虚线表示。*
+*内置「特殊电路专用 NAC」示例（内置一些实例，不过是作者测试之举，愿各员工亲历而为！）。基面为实线，下沉层用不同疏密的虚线表示。*
 
 ## 下载与启动
 
